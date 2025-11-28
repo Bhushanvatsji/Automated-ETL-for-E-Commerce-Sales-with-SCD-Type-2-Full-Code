@@ -1,0 +1,3 @@
+order_id,order_ts,customer_id,product_id,quantity,unit_price
+ord001,2023-03-01 11:00:00,1001,p100,2,19.99
+ord002,2023-03-05 14:30:00,1002,p101,1,79.99
