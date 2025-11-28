@@ -10,3 +10,15 @@ This project demonstrates an end-to-end automated ETL pipeline using Airflow, db
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+# Architecture
+
+
+- Sources: Postgres/MySQL/CSV
+- Orchestration: Apache Airflow
+- Staging & Transform: dbt + Python transforms
+- Warehouse: Snowflake (or BigQuery / Redshift)
+- Data Quality: Great Expectations
+- BI: Power BI / Tableau
+
+
+Flow: Extract -> Bronze (raw) -> Silver (staging cleansed) -> Merge SCD dims ->
