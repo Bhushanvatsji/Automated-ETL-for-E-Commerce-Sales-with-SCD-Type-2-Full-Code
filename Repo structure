@@ -1,0 +1,32 @@
+ecommerce-etl-scd/
+├── README.md
+├── requirements.txt
+├── airflow/
+│ ├── dags/
+│ │ └── etl_scd.py
+│ └── plugins/
+│ └── helpers.py
+├── dbt/
+│ ├── models/
+│ │ ├── staging/
+│ │ │ ├── stage_customers.sql
+│ │ │ ├── stage_products.sql
+│ │ │ └── stage_sales.sql
+│ │ ├── marts/
+│ │ │ ├── dim_customer.sql
+│ │ │ ├── dim_product.sql
+│ │ │ └── fact_sales.sql
+│ │ └── schema.yml
+│ └── profiles.yml.example
+├── sql/
+│ ├── merge_dim_customer.sql
+│ ├── merge_dim_product.sql
+│ └── load_fact_sales.sql
+├── great_expectations/
+│ └── expectations_example.py
+├── samples/
+│ ├── customers.csv
+│ ├── products.csv
+│ └── sales.csv
+└── docs/
+└── architecture.md
